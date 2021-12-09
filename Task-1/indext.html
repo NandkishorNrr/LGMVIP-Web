@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Monped</title>
   <style>
     body {
       margin: 0%;
@@ -149,9 +150,36 @@
       padding-top:2%;
      text-align: center;
     }
+    .monpedLife{
+      border: 1px solid black;
+      width: inherit;
+      height: auto;
+      display: inline-block;
+      text-align: center;
+      padding: 1%;
+    }
+    .mySlides {display:none;}
   </style>
 </head>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
 <body>
   <div class="nav">
     <ul>
@@ -227,21 +255,22 @@
   </div>
   <div class="videoPrj">
     <h2 style="text-align: center;">Video Project</h2><br><br>
-    <video width="30%" height="60%" controls>
+    <video width="33%" height="60%" controls>
       <source src="movie.mp4" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
-    <video width="30%" height="60%" controls>
+    <video width="33%" height="60%" controls>
       <source src="movie.mp4" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
-    <video width="30%" height="60%" controls>
+    <video width="33%" height="60%" controls>
       <source src="movie.mp4" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
+    
   </div>
   <div class="MonpedTeam">
     <h2 >Monped Team</h2>
@@ -276,6 +305,15 @@
       <h3>Victory Ostean</h3>
       <a href="#">@MyLinleIn</a>
     </div>
+  </div>
+  <h2>Life in Monped</h2>
+  <div class="monpedLife">
+    <img class="mySlides" src="/PrjCard1java.png" style="width: 90%">
+    <img class="mySlides" src="/PrjCrd2DS.jpg" style="width:90%">
+    <img class="mySlides" src="/PrjCrd3DB.jpg" style="width:90%">
+    <img class="mySlides" src="/PrjCrd4WD.jpg" style="width:90%">
+    <button class="imgCng" onclick="plusDivs(-1)"><i class="fa fa-chevron-circle-left"></i></button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><i class="fa fa-chevron-circle-right"></i></button>
   </div>
 </body>
 </html>
