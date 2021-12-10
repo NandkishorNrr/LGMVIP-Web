@@ -118,6 +118,7 @@
 
     .project {
       /* border: 1px solid black; */
+      text-align: center;
     }
 
     .pcard {
@@ -291,8 +292,52 @@
     }
 
     .blogs {
-      border: 1px solid black;
+      /* border: 5px solid rgb(185, 24, 24); */
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .blgCard {
+      /* border: 1px solid black; */
       width: 19%;
+      height: auto;
+      display: inline-block;
+      margin-left: 3%;
+      text-align: center;
+      padding: 1%;
+    }
+
+    .contact {
+      /* border: 5px solid rgb(185, 24, 24); */
+      width: 100%;
+      height: 370px;
+      display: inline-block;
+      background-color: rgb(206, 202, 224);
+    }
+
+    .contFrm {
+      /* border: 1px solid black; */
+      width: 48%;
+      height: inherit;
+      display: inline-block;
+      /* margin-left: 3%; */
+      /* text-align: center; */
+      /* padding: 1%; */
+    }
+
+    .footer {
+      /* border: 5px solid rgb(185, 24, 24); */
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .foot {
+      border: 1px solid black;
+      width: 20%;
       height: auto;
       display: inline-block;
       margin-left: 3%;
@@ -378,6 +423,7 @@
     </div>
   </div>
   <div class="project" id="project">
+    <h2>Monped Project</h2>
     <div class="pcard pcard1">
       <img src="/PrjCard1java.png" alt="Java" style="width: 100%;">
       <h3>JAVA</h3>
@@ -420,6 +466,7 @@
       <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
+  </div>
   </div>
   <div class="MonpedTeam"><br>
     <h2 style="text-align:center">Monped Team</h2>
@@ -506,7 +553,79 @@
   </form>
 </div>
 <div class="blogs">
-
+  <div class="blgCard blgCard1">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">
+      <img src="/PrjCard1java.png" style="width: 80%;" alt="Java">
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <button class="button button1">LEARN MORE</button>
+  </div>
+  <div class="blgCard blgCard2">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">
+      <img src="/PrjCrd2DS.jpg" style="width: 80%;" alt="Data Structure">
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <button class="button button1">LEARN MORE</button>
+  </div>
+  <div class="blgCard blgCard3">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">
+      <img src="/PrjCrd3DB.jpg" style="width: 80%;" alt="Data Base">
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <button class="button button1">LEARN MORE</button>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <div class="contFrm conMap">
+    <img src="/conFrmLocationimg.jpg" style="width: 100%;height: inherit;" alt="Loction">
+  </div>
+  <div class="contFrm conData">
+    <h2 style="text-align: center;">Contact</h2>
+    <form action="conData.php" style="padding-left: 10%; font-weight:bolder;">
+      <label for="name" name="name">NAME</label><br>
+      <input type="text" style="width:35ch;"><br><br>
+      <label for="email" name="email">E-MAIL</label><br>
+      <input type="email" style="width:35ch;"><br><br>
+      <label for="Subject" name="subject">SUBJECT</label><br>
+      <input type="text" style="width:35ch;"><br><br>
+      <label for="textarea" name="textrea">MESSAGE</label><br>
+      <textarea id="conTxtArea" name="" rows="4" cols="32">
+    </textarea><br>
+      <button class="button button1">SEND</button><br>
+    </form><br>
+  </div>
+</div>
+<div class="footer">
+  <div class="foot conectAcr">
+    <a href="#">Lorem, ipsum dolor.</a>
+    <a href="#">Lorem, dolor.</a>
+    <a href="#">Lorem.</a>
+  </div>
+  <div class="foot followUs">
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook"></i><br>
+    <i class="fa fa-google"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-whatsapp"></i>
+  </div>
+  <div class="foot contactUs">
+    <a href="#">123-1234-123</a>
+    <a href="#">xyz@gmail.com</a>
+    <a href="#">xyz@monped.com</a>
+  </div>
 </div>
 
 </html>
