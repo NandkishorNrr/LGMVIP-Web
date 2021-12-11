@@ -15,7 +15,7 @@
     }
 
     .nav {
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 100%;
       position: fixed;
       background-color: #4e1161;
@@ -24,17 +24,15 @@
       height: auto;
       text-align: center;
     }
-
     .home {
       width: auto;
-      height: 620px;
+      height: 300px;
       background-image: url(/connected-technology.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-
       padding-left: 20%;
       padding-right: 20%;
-      padding-top: 5%;
+      padding-top:2%;
       color: white;
     }
 
@@ -85,11 +83,17 @@
     .button2 {
       background-color: #4e1161;
     }
-
-    .Monped {
+    .icon{
+      font-size:40px;
+      opacity: 0.6;
+    }
+    .icon:hover {
+      opacity: 1;
+    }
+    .monpedWel {
       /* border: 1px solid black; */
       width: auto;
-      height: 400px;
+      height: 720px;
       padding-left: 20%;
       padding-right: 20%;
       padding-top: 5%;
@@ -97,7 +101,7 @@
       color: black;
     }
 
-    .card {
+    .cardWel {
       /* border: 1px solid black; */
       width: 25%;
       height: auto;
@@ -107,17 +111,18 @@
       padding: 1%;
     }
 
-    .card a {
+    .cardWel a {
       text-decoration: none;
       color: #4e1161;
     }
 
-    .card a:hover {
+    .cardWel a:hover {
       color: #c7c5d3;
     }
 
     .project {
       /* border: 1px solid black; */
+      height: 628px;
       text-align: center;
     }
 
@@ -137,11 +142,11 @@
       height: 550px;
     }
 
-    .MonpedTeam img {
+    .team img {
       border-radius: 50%;
     }
 
-    .MonpedTeam {
+    .team {
       background-color: rgb(229, 225, 233);
       width: inherit;
       height: 650px;
@@ -312,7 +317,7 @@
     .contact {
       /* border: 5px solid rgb(185, 24, 24); */
       width: 100%;
-      height: 370px;
+      height: 400px;
       display: inline-block;
       background-color: rgb(206, 202, 224);
     }
@@ -322,13 +327,11 @@
       width: 48%;
       height: inherit;
       display: inline-block;
-      /* margin-left: 3%; */
-      /* text-align: center; */
-      /* padding: 1%; */
     }
 
     .footer {
       /* border: 5px solid rgb(185, 24, 24); */
+      /* background-color:rgb(219, 207, 199) ; */
       width: 100%;
       height: auto;
       display: inline-block;
@@ -336,13 +339,15 @@
     }
 
     .foot {
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 20%;
       height: auto;
       display: inline-block;
       margin-left: 3%;
       text-align: center;
-      padding: 1%;
+    }
+    .followUs{
+      
     }
   </style>
 </head>
@@ -377,14 +382,16 @@
 <body>
   <div class="nav">
     <ul>
-      <li style="font-size:larger; padding-right: 5%;"><a href="#Monped">Monped</a></li>
+      <li style="font-size:larger; padding-right: 5%;"><a href="#monpedWel">Monped</a></li>
       <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#life">Life</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
+      <li style="font-size:larger; padding-right: 1%; float: right;"><a href="#signUp">Sign Up</a></li>
     </ul>
   </div><br>
-  <div class="home" id="home"><br><br><br><br><br>
+  <div class="home" id="home"><br>
     <h2>One page promising to fill all your needs!</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aliquam, dolor sit amet consectetur adipisicing
       elit. Ipsum, aliquam.orem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aliquam, dolor sit amet
@@ -393,37 +400,40 @@
     <button class="button button1">LEARN MORE</button>
     <button class="button button2">LEARN MORE</button>
   </div>
-  <div class="Monped" id="Monped">
-    <h4 style="text-align: center;">Welcome to Monped</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit vel minima laboriosam id dolorum cum tempore
-      corrupti. Inventore, temporibus.</p>
-    <div class="card card1">
+  <div class="monpedWel" id="monpedWel">
+    <h1 style="text-align: center;">Welcome to Monped</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repellat blanditiis. Exercitationem, molestiae ducimus. Quia veritatis voluptas dolorum veniam porro ratione omnis, blanditiis similique! Tenetur vel voluptatum magni sint excepturi. Reiciendis ullam quasi adipisci inventore laudantium pariatur iusto, iure obcaecati odit possimus. Illo necessitatibus harum praesentium ullam nulla incidunt ipsa?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repellat blanditiis. Exercitationem, molestiae ducimus. Quia veritatis voluptas dolorum veniam porro ratione omnis, blanditiis similique! Tenetur vel voluptatum magni sint excepturi. Reiciendis ullam quasi adipisci inventore laudantium pariatur iusto, iure obcaecati odit possimus. Illo necessitatibus harum praesentium ullam nulla incidunt ipsa?</p><br><br>
+    <div class="cardWel cardWel1">
       <a href="#">
-        <i class="fa fa-bell"></i>
+        <i class="fa fa-bell icon"></i>
         <h3 style="margin-top: 0%;">NOTIFICATION</h3>
       </a>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
-      <button class="button button1">LEARN MORE</button>
-    </div>
-    <div class="card card2">
-      <a href="#">
-        <i class="fa fa-envelope" "></i>
-          <h3 style=" margin-top: 0%;">DOLOR SIT</h3>
-      </a>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
       <button class="button button1">LEARN MORE</button>
     </div>
-    <div class="card card3">
+    <div class="cardWel cardWel2">
       <a href="#">
-        <i class="fa fa-group" "></i>
+        <i class="fa fa-envelope icon"></i>
           <h3 style=" margin-top: 0%;">DOLOR SIT</h3>
       </a>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
+      <button class="button button1">LEARN MORE</button>
+    </div>
+    <div class="cardWel cardWel3">
+      <a href="#">
+        <i class="fa fa-group icon"></i>
+          <h3 style=" margin-top: 0%;">DOLOR SIT</h3>
+      </a>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
       <button class="button button1">LEARN MORE</button>
     </div>
   </div>
   <div class="project" id="project">
-    <h2>Monped Project</h2>
+    <h1>Monped Project</h1>
     <div class="pcard pcard1">
       <img src="/PrjCard1java.png" alt="Java" style="width: 100%;">
       <h3>JAVA</h3>
@@ -468,7 +478,7 @@
     </video>
   </div>
   </div>
-  <div class="MonpedTeam"><br>
+  <div class="team" id="team"><br>
     <h2 style="text-align:center">Monped Team</h2>
     <div class="zptmcrd MonpedTmC1">
       <img src="/TeaIimg_Mavatar.png" alt="Avatar" style="width:100px">
@@ -502,7 +512,7 @@
       <a href="#">@MyLinleIn</a>
     </div>
   </div>
-  <div class="monpedLife">
+  <div class="monpedLife" id="life">
     <h2 style="text-align:center">Life in Monped</h2>
     <div class="container">
       <div class="mySlides">
@@ -545,7 +555,7 @@
     </div>
   </div>
 </body>
-<div class="sinUp">
+<div class="sinUp " id="signUp">
   <form action="data.php"><br>
     <h1>New sign Up</h1>
     <input type="email" style=" font-size: 1.5em;">
@@ -613,13 +623,13 @@
     <a href="#">Lorem, dolor.</a>
     <a href="#">Lorem.</a>
   </div>
-  <div class="foot followUs">
-    <i class="fa fa-linkedin"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-facebook"></i><br>
-    <i class="fa fa-google"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-whatsapp"></i>
+  <div class="foot followUs" style="font-size:2em">
+    <i class="fa fa-linkedin icon"></i>
+    <i class="fa fa-twitter icon"></i>
+    <i class="fa fa-facebook icon"></i><br>
+    <i class="fa fa-google icon"></i>
+    <i class="fa fa-instagram icon"></i>
+    <i class="fa fa-whatsapp icon"></i>
   </div>
   <div class="foot contactUs">
     <a href="#">123-1234-123</a>
