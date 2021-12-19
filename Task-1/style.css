@@ -1,0 +1,365 @@
+
+body {
+  margin: 0%;
+}
+
+h2 {
+  padding-top: 2%;
+}
+
+.nav {
+  /* border: 1px solid black; */
+  width: 100%;
+  position: fixed;
+  background-color: rgb(3, 32, 77);
+  color: rgb(154, 168, 189);
+  padding-left: 20%;
+  padding-right: 20%;
+  height: auto;
+  text-align: center;
+}
+.home {
+  width: auto;
+  height: 320px;
+  background-image: url(/connected-technology.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top:2%;
+  color: black ;
+  font-weight:bolder;
+  text-align: justify;
+}
+.AlbertEinstein{
+  float: left;
+  margin: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  /* background-color: rgb(43, 56, 117); */
+  color: rgb(240, 241, 243);
+  font-weight: bolder;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color:  rgb(15, 49, 100);
+  font-weight: bolder;
+  zoom: 110%;
+}
+
+.button1 {
+  background-color: rgb(3, 32, 77);
+}
+
+.button2 {
+  background-color: #4e1161;
+}
+.icon{
+  font-size:40px;
+  opacity: 0.6;
+}
+.icon:hover {
+  opacity: 1;
+}
+.welmonped {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 720px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+
+  color: black;
+}
+
+.cardWel {
+  /* border: 1px solid black; */
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  margin-left: 3%;
+  text-align: center;
+  padding: 1%;
+}
+
+.cardWel a {
+  text-decoration: none;
+  color: rgb(3, 32, 77);
+}
+
+.cardWel a:hover {
+  color: rgb(3, 32, 77);
+  zoom: 110%;
+}
+
+.project {
+  /* border: 1px solid black; */
+  height: 628px;
+  text-align: center;
+}
+
+.pcard {
+  /* border: 1px solid black; */
+  width: 19%;
+  height: auto;
+  display: inline-block;
+  margin-left: 3%;
+  text-align: center;
+  padding: 1%;
+}
+
+.videoPrj {
+  background-color: rgb(194, 171, 218);
+  width: 100%;
+  height: 550px;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+.team {
+  background-color: rgb(229, 225, 233);
+  width: inherit;
+  height: 650px;
+  margin-top: 0%;
+  /* padding-left: 8%;
+  padding-right: 10%; */
+  text-align: center;
+}
+
+.zptmcrd {
+  /* border: 1px solid black; */
+  width: 22%;
+  height: auto;
+  display: inline-block;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.monpedLife {
+  /* border: 1px solid black; */
+  background-color: rgb(194, 171, 218);
+  width: 100%;
+  height: 670px;
+  margin-top: 0%;
+  padding-top: 0%;
+  text-align: center;
+  display: inline-block;
+  text-align: center;
+}
+.mySlides {
+  display:none;
+}
+
+/* .mySlides {display:none;} */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  /* border: 5px solid black; */
+  background-color: rgb(229, 225, 233);
+  width: inherit;
+  height: 450px;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  text-align: center;
+}
+
+.monpedLife img {
+  vertical-align: middle;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.signUp {
+  /* border: 1px solid black; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  color: white;
+  background-position-y: center;
+  background-image: url(/signUpBG.jpg);
+  width: 100%;
+  height: 270px;
+  margin-top: 0%;
+  padding-top: 0%;
+  text-align: center;
+  display: inline-block;
+}
+
+.signUp button {
+  margin-top: 3%;
+}
+
+.blogs {
+  /* border: 5px solid rgb(185, 24, 24); */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.blgCard {
+  /* border: 1px solid black; */
+  width: 19%;
+  height: auto;
+  display: inline-block;
+  margin-left: 3%;
+  text-align: center;
+  padding: 1%;
+}
+.blgCard:hover{
+  zoom: 102%;
+  box-shadow: #222;
+}
+
+.contact {
+  /* border: 5px solid rgb(185, 24, 24); */
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  background-color: rgb(206, 202, 224);
+}
+
+.contFrm {
+  /* border: 1px solid black; */
+  width: 48%;
+  height: inherit;
+  display: inline-block;
+}
+
+.footer {
+  /* border: 5px solid rgb(185, 24, 24); */
+  /* background-color:rgb(219, 207, 199) ; */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.foot {
+  /* border: 1px solid black; */
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  margin-left: 3%;
+  text-align: center;
+}
+.followUs{
+  
+}

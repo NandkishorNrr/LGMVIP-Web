@@ -4,410 +4,60 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Monped</title>
-  <style>
-    body {
-      margin: 0%;
-
-    }
-
-    h2 {
-      padding-top: 2%;
-    }
-
-    .nav {
-      /* border: 1px solid black; */
-      width: 100%;
-      position: fixed;
-      background-color: #4e1161;
-      padding-left: 20%;
-      padding-right: 20%;
-      height: auto;
-      text-align: center;
-    }
-    .home {
-      width: auto;
-      height: 300px;
-      background-image: url(/connected-technology.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-top:2%;
-      color: white;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: transparent;
-    }
-
-    li {
-      float: left;
-
-    }
-
-    a {
-      display: block;
-      color: inherit;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      /* background-color: rgb(43, 56, 117); */
-      color: #c7c5d3;
-    }
-
-    .button {
-      background-color: #4CAF50;
-      /* Green */
-      border: none;
-      color: white;
-      padding: 5px 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    .button1 {
-      background-color: #c2a91a;
-    }
-
-    .button2 {
-      background-color: #4e1161;
-    }
-    .icon{
-      font-size:40px;
-      opacity: 0.6;
-    }
-    .icon:hover {
-      opacity: 1;
-    }
-    .monpedWel {
-      /* border: 1px solid black; */
-      width: auto;
-      height: 720px;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-top: 5%;
-
-      color: black;
-    }
-
-    .cardWel {
-      /* border: 1px solid black; */
-      width: 25%;
-      height: auto;
-      display: inline-block;
-      margin-left: 3%;
-      text-align: center;
-      padding: 1%;
-    }
-
-    .cardWel a {
-      text-decoration: none;
-      color: #4e1161;
-    }
-
-    .cardWel a:hover {
-      color: #c7c5d3;
-    }
-
-    .project {
-      /* border: 1px solid black; */
-      height: 628px;
-      text-align: center;
-    }
-
-    .pcard {
-      /* border: 1px solid black; */
-      width: 19%;
-      height: auto;
-      display: inline-block;
-      margin-left: 3%;
-      text-align: center;
-      padding: 1%;
-    }
-
-    .videoPrj {
-      background-color: rgb(194, 171, 218);
-      width: 100%;
-      height: 550px;
-    }
-
-    .team img {
-      border-radius: 50%;
-    }
-
-    .team {
-      background-color: rgb(229, 225, 233);
-      width: inherit;
-      height: 650px;
-      margin-top: 0%;
-      /* padding-left: 8%;
-      padding-right: 10%; */
-      text-align: center;
-    }
-
-    .zptmcrd {
-      /* border: 1px solid black; */
-      width: 22%;
-      height: auto;
-      display: inline-block;
-      padding-top: 2%;
-      text-align: center;
-    }
-
-    .monpedLife {
-      /* border: 1px solid black; */
-      background-color: rgb(194, 171, 218);
-      width: 100%;
-      height: 670px;
-      margin-top: 0%;
-      padding-top: 0%;
-      text-align: center;
-      display: inline-block;
-      text-align: center;
-    }
-
-    /* .mySlides {display:none;} */
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-      /* border: 5px solid black; */
-      background-color: rgb(229, 225, 233);
-      width: inherit;
-      height: 450px;
-      /* padding-left: 10%;
-      padding-right: 10%; */
-      text-align: center;
-    }
-
-    .monpedLife img {
-      vertical-align: middle;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Six columns side by side */
-    .column {
-      float: left;
-      width: 16.66%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-
-    .sinUp {
-      /* border: 1px solid black; */
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: auto;
-      color: white;
-      background-position-y: center;
-      background-image: url(/signUpBG.jpg);
-      width: 100%;
-      height: 270px;
-      margin-top: 0%;
-      padding-top: 0%;
-      text-align: center;
-      display: inline-block;
-    }
-
-    .sinUp button {
-      margin-top: 3%;
-    }
-
-    .blogs {
-      /* border: 5px solid rgb(185, 24, 24); */
-      width: 100%;
-      height: auto;
-      display: inline-block;
-      text-align: center;
-    }
-
-    .blgCard {
-      /* border: 1px solid black; */
-      width: 19%;
-      height: auto;
-      display: inline-block;
-      margin-left: 3%;
-      text-align: center;
-      padding: 1%;
-    }
-
-    .contact {
-      /* border: 5px solid rgb(185, 24, 24); */
-      width: 100%;
-      height: 400px;
-      display: inline-block;
-      background-color: rgb(206, 202, 224);
-    }
-
-    .contFrm {
-      /* border: 1px solid black; */
-      width: 48%;
-      height: inherit;
-      display: inline-block;
-    }
-
-    .footer {
-      /* border: 5px solid rgb(185, 24, 24); */
-      /* background-color:rgb(219, 207, 199) ; */
-      width: 100%;
-      height: auto;
-      display: inline-block;
-      text-align: center;
-    }
-
-    .foot {
-      /* border: 1px solid black; */
-      width: 20%;
-      height: auto;
-      display: inline-block;
-      margin-left: 3%;
-      text-align: center;
-    }
-    .followUs{
-      
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <script>
   var slideIndex = 1;
-  showSlides(slideIndex);
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
   }
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  function showSlides(n) {
+  
+  function showDivs(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    x[slideIndex-1].style.display = "block";  
   }
-</script>
+  </script>
 
 <body>
   <div class="nav">
-    <ul>
-      <li style="font-size:larger; padding-right: 5%;"><a href="#monpedWel">Monped</a></li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#life">Life</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="font-size:larger; padding-right: 1%; float: right;"><a href="#signUp">Sign Up</a></li>
+    <ul class="topnav">
+        <li><a href="#welmonped">Monped</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#life">Life</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#signUp">Sign Up</a></li>
     </ul>
-  </div><br>
+</div>
   <div class="home" id="home"><br>
-    <h2>One page promising to fill all your needs!</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aliquam, dolor sit amet consectetur adipisicing
-      elit. Ipsum, aliquam.orem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aliquam, dolor sit amet
-      consectetur adipisicing
-      elit. Ipsum, aliquam.</p><br>
+    <h2>Be Natural!</h2>
+    <p><img class="AlbertEinstein" src="/AlbertEinstein.jpg" alt="Albert Einstein">
+      “A human being is a part of the whole called by us universe, a part limited in time and space. He experiences himself, his thoughts and feeling as something separated from the rest, a kind of optical delusion of his consciousness. This delusion is a kind of prison for us, restricting us to our personal desires and to affection for a few persons nearest to us. Our task must be to free ourselves from this prison by widening our circle of compassion to embrace all living creatures and the whole of nature in its beauty.”<br>
+      ― Albert Einstein</p><br>
     <button class="button button1">LEARN MORE</button>
-    <button class="button button2">LEARN MORE</button>
+    <!-- <button class="button button2">LEARN MORE</button> -->
   </div>
-  <div class="monpedWel" id="monpedWel">
+  <div class="welmonped" id="welmonped">
     <h1 style="text-align: center;">Welcome to Monped</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repellat blanditiis. Exercitationem, molestiae ducimus. Quia veritatis voluptas dolorum veniam porro ratione omnis, blanditiis similique! Tenetur vel voluptatum magni sint excepturi. Reiciendis ullam quasi adipisci inventore laudantium pariatur iusto, iure obcaecati odit possimus. Illo necessitatibus harum praesentium ullam nulla incidunt ipsa?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, repellat blanditiis. Exercitationem, molestiae ducimus. Quia veritatis voluptas dolorum veniam porro ratione omnis, blanditiis similique! Tenetur vel voluptatum magni sint excepturi. Reiciendis ullam quasi adipisci inventore laudantium pariatur iusto, iure obcaecati odit possimus. Illo necessitatibus harum praesentium ullam nulla incidunt ipsa?</p><br><br>
+    <p><h3>Poetry on Nature</h3>Whether one is watching a thrilling thunderstorm or looking up at a mighty tree, the experience of nature is one of awe. One cannot help but marvel at the intricate design of a single leaf, or the roar of a great waterfall. Time spent in nature is time spent realizing that you don't know it all and that you never will. The earth is meant to be enjoyed by its inhabitants. That includes keeping it in the pristine condition in which it was discovered. Everyone has a part of the earth that they relate to the most. Whether it is a majestic mountain range, a roaring waterfall, a bouquet of flowers, or the calm of the woods, these are places to get to know oneself and build bonds with family.
+      
+      
+      
+      <!-- Source: https://www.familyfriendpoems.com/poems/nature -->/</p>
+    <p></p><br><br>
     <div class="cardWel cardWel1">
       <a href="#">
         <i class="fa fa-bell icon"></i>
-        <h3 style="margin-top: 0%;">NOTIFICATION</h3>
+        <h3 style="margin-top: 0%;">DOLOR SIT</h3>
       </a>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa?</p>
@@ -435,26 +85,26 @@
   <div class="project" id="project">
     <h1>Monped Project</h1>
     <div class="pcard pcard1">
-      <img src="/PrjCard1java.png" alt="Java" style="width: 100%;">
-      <h3>JAVA</h3>
+      <img src="/PrjCard1Provided.png" alt="" style="width: 100%;">
+      <h3>PROVIDED</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate!</p>
       <button class="button button1">LEARN MORE</button>
     </div>
     <div class="pcard pcard2">
-      <img src="/PrjCrd2DS.jpg" alt="Java" style="width: 100%;">
-      <h3>DATA STRUCTURE</h3>
+      <img src="/PrjCrd2ToDo.jpg" alt="" style="width: 100%;">
+      <h3>TO DO</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate!</p>
       <button class="button button1">LEARN MORE</button>
     </div>
     <div class="pcard pcard3">
-      <img src="/PrjCrd3DB.jpg" alt="Java" style="width: 100%;">
-      <h3>DATA BASE</h3>
+      <img src="/PrjCrd3Beauty.jpg" alt="" style="width: 100%;">
+      <h3>BEAUTY</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate!</p>
       <button class="button button1">LEARN MORE</button>
     </div>
     <div class="pcard pcard1">
-      <img src="/PrjCrd4WD.jpg" alt="Java" style="width: 100%;">
-      <h3>WEB DEVLOPMENT</h3>
+      <img src="/PrjCrd4Resources.jpg" alt="" style="width: 100%;">
+      <h3>RESOURCES</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate!</p>
       <button class="button button1">LEARN MORE</button>
     </div>
@@ -462,18 +112,18 @@
   <div class="videoPrj">
     <h2 style="text-align: center;">Video Project</h2>
     <video width="33%" height="60%" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
+      <source src="movie1.mp4" type="video/mp4">
+      <source src="movie1.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
     <video width="33%" height="60%" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
+      <source src="movie1.mp4" type="video/mp4">
+      <source src="movie1.mp4.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
     <video width="33%" height="60%" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
+      <source src="movie1.mp4" type="video/mp4">
+      <source src="movie1.mp4.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -513,49 +163,20 @@
     </div>
   </div>
   <div class="monpedLife" id="life">
-    <h2 style="text-align:center">Life in Monped</h2>
-    <div class="container">
-      <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-        <img src="/PrjCard1java.png" style="width: 90%; height: 100%;">
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="/PrjCrd2DS.jpg" style="width: 90%; height: 100%;">
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-        <img src="/PrjCrd3DB.jpg" style="width: 90%; height: 100%;">
-      </div>
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-        <img src="/PrjCrd4WD.jpg" style="width: 90%; height: 100%;">
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="/PrjCard1java.png" style="height: 50px;" onclick="currentSlide(1)" alt="Java">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="/PrjCrd2DS.jpg" style="height: 50px;" onclick="currentSlide(2)"
-            alt="Data Structure">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="/PrjCrd3DB.jpg" style="height: 50px;" onclick="currentSlide(3)" alt="Data Base">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="/PrjCrd4WD.jpg" style="height: 50px;" onclick="currentSlide(4)"
-            alt="Web Devlopment">
-        </div>
-      </div>
-    </div>
+    <h2 class="monped-center">Life in Monped</h2>
+
+<div class="monped-content monped-display-container">
+  <img class="mySlides" src="/PrjCard1Provided.png" style="width:100%;">
+  <img class="mySlides" src="/PrjCrd2ToDo.jpg" style="width:100%">
+  <img class="mySlides" src="/PrjCrd3Beauty.jpg" style="width:100%">
+  <img class="mySlides" src="/PrjCrd4Resources.jpg" style="width:100%">
+
+  <button class="monped-button monped-black monped-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="monped-button monped-black monped-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
   </div>
 </body>
-<div class="sinUp " id="signUp">
+<div class="signUp " id="signUp">
   <form action="data.php"><br>
     <h1>New sign Up</h1>
     <input type="email" style=" font-size: 1.5em;">
@@ -567,9 +188,9 @@
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
     <div class="fakeimg" style="height:200px;">
-      <img src="/PrjCard1java.png" style="width: 80%;" alt="Java">
+      <img src="/PrjCard1Provided.png" style="width: 80%;" alt="Provided">
     </div>
-    <p>Some text..</p>
+    <p>Provided</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <button class="button button1">LEARN MORE</button>
@@ -578,9 +199,9 @@
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
     <div class="fakeimg" style="height:200px;">
-      <img src="/PrjCrd2DS.jpg" style="width: 80%;" alt="Data Structure">
+      <img src="/PrjCrd2ToDo.jpg" style="width: 80%;" alt="To Do">
     </div>
-    <p>Some text..</p>
+    <p>To Do</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <button class="button button1">LEARN MORE</button>
@@ -589,9 +210,9 @@
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
     <div class="fakeimg" style="height:200px;">
-      <img src="/PrjCrd3DB.jpg" style="width: 80%;" alt="Data Base">
+      <img src="/PrjCrd4Resources.jpg" style="width: 80%;" alt="Resources">
     </div>
-    <p>Some text..</p>
+    <p>Resources</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <button class="button button1">LEARN MORE</button>
